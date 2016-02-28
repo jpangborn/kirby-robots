@@ -6,7 +6,7 @@ kirby()->routes(array(
     'action'  => function() {
       $robots = tpl::load(__DIR__ . DS . 'template.php', array(), true);
 
-      new Response($robots, 'txt');
+      return new Response($robots, 'txt');
     }
   )
 ));
