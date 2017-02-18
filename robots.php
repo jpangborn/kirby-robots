@@ -1,6 +1,6 @@
 <?php
 
-  $kirby->set('routes', array(
+  $kirby->set('route', array(
     'pattern' => 'robots.txt',
     'action'  => function() {
       $robots = tpl::load(__DIR__ . DS . 'template.php', array(), true);
